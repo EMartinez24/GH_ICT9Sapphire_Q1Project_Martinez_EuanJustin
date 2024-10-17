@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #222;
+        color: #fff;
+        margin: 0;
+        text-align: center;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #333;
+    }
+
+    .nav-brand {
+        font-size: 24px;
+        font-weight: bold;
+        color: #fff;
+    }
+
+    .nav-center {
+        display: flex;
+        gap: 20px;
+    }
+
+    .nav-right {
+        display: flex;
+        gap: 10px;
+    }
+
+    .nav-link {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    .nav-link:hover {
+        color: #ccc;
+    }
+
+    .signup-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70vh;
+    }
+
+    .signup-container {
+        background-color: #333;
+        padding: 40px;
+        border-radius: 8px;
+        width: 300px;
+        text-align: left;
+        margin-top: 50px; /* Adjust this value to move the box down */
+    }
+
+    .signup-container h2 {
+        margin-bottom: 20px;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .signup-form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .signup-form label {
+        margin-bottom: 5px;
+        font-size: 16px;
+    }
+
+    .signup-form input {
+        padding: 10px;
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 4px;
+        background-color: #444;
+        color: #fff;
+        font-size: 16px;
+    }
+
+    .signup-form input::placeholder {
+        color: #ccc;
+    }
+
+    .signup-button {
+        background-color: #ff5722;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        font-size: 16px;
+    }
+
+    .signup-button:hover {
+        background-color: #e64a19;
+    }
+
+    .login-link {
+        color: #ff5722;
+        text-decoration: none;
+    }
+
+    .login-link:hover {
+        text-decoration: underline;
+    }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">SimGear</div>
+        <div class="nav-center">
+            <a href="#" class="nav-link">Bestsellers</a>
+            <a href="index.html" class="nav-link">Shop</a>
+        </div>
+        <div class="nav-right">
+            <a href="login.html" class="nav-link">Login</a>
+            <a href="signup.html" class="nav-link">Signup</a>
+        </div>
+    </nav>
+
+    <section class="signup-section">
+        <div class="signup-container">
+            <h2>Create Your Account</h2>
+            <form class="signup-form" action="#" method="POST">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+                <button type="submit" class="signup-button">Sign Up</button>
+            </form>
+            <p>Already have an account? <a href="login.html" class="login-link">Login here</a></p>
+        </div>
+    </section>
+</body>
+</html>
